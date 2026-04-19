@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | Yati Locs</title>
-    <link rel="icon" href="icons/yati_locs_logo.svg">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #F1E9DB;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        
-        .container {
-            max-width: 600px;
-            padding: 40px 20px;
-        }
-        
-        h1 {
-            font-size: 6rem;
-            color: #B85C38;
-            margin-bottom: 20px;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            color: #666;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #2A9D8F;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        
-        .btn:hover {
-            background: #E9C46A;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found &#8212; Yati Locs Dubai</title>
+  <link rel="icon" href="icons/yati_locs_logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0D0B08; --gold: #C9A84C; --cream: #F5EDD6;
+      --terracotta: #B85C38; --muted: #7A6E62;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+    body {
+      background: var(--bg); color: var(--cream);
+      font-family: var(--font-body);
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; text-align: center; padding: 2rem;
+    }
+    .four-o-four {
+      font-family: var(--font-display); font-size: clamp(5rem, 18vw, 12rem);
+      font-weight: 800; color: rgba(201,168,76,0.18);
+      line-height: 1; margin-bottom: 0.25rem; display: block;
+    }
+    h1 {
+      font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700; margin-bottom: 0.75rem;
+    }
+    p { color: var(--muted); margin-bottom: 2.25rem; font-size: 1.05rem; }
+    a {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--terracotta); color: var(--cream);
+      text-decoration: none; padding: 0.9rem 2rem; border-radius: 2rem;
+      font-weight: 600; touch-action: manipulation;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    a:hover { background: #96482B; transform: translateY(-2px); }
+    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .kente {
+      width: 100%; height: 6px; margin-bottom: 2rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='6'%3E%3Crect x='0' y='0' width='12' height='6' fill='%23C9A84C'/%3E%3Crect x='12' y='0' width='12' height='6' fill='%23B85C38'/%3E%3Crect x='24' y='0' width='12' height='6' fill='%23C9A84C'/%3E%3Crect x='36' y='0' width='12' height='6' fill='%230D0B08'/%3E%3C/svg%3E");
+      background-repeat: repeat-x; background-size: 48px 6px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <p>The page you're looking for doesn't exist.</p>
-        <a href="/" class="btn">Go Home</a>
-    </div>
+  <div>
+    <div class="kente" aria-hidden="true"></div>
+    <span class="four-o-four" aria-hidden="true">404</span>
+    <h1>This page took a detour.</h1>
+    <p>The link you followed doesn&#8217;t exist &#8212; but your crown still does.</p>
+    <a href="/">Back to Yati Locs</a>
+  </div>
 </body>
 </html>

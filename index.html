@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yati Locs &#8212; Dubai&#8217;s Premier Locs &amp; Black Hair Specialist</title>
   <meta name="description" content="Expert locs creation, maintenance, styling and Black hair care in Dubai. Book with Yati &#8212; the go-to locs specialist for Dubai&#8217;s African diaspora. WhatsApp +971558487022.">
-  <link rel="canonical" href="https://yatilocs.com/">
+  <link rel="canonical" href="https://yatifirecutz.com/">
   <meta property="og:title" content="Yati Locs &#8212; Dubai&#8217;s Premier Locs &amp; Black Hair Specialist">
   <meta property="og:description" content="Expert locs creation, maintenance, and styling in Dubai. Book with Yati &#8212; the go-to locs specialist for Dubai&#8217;s African diaspora.">
-  <meta property="og:image" content="https://yatilocs.com/Yati_01.jpg">
-  <meta property="og:url" content="https://yatilocs.com/">
+  <meta property="og:image" content="https://yatifirecutz.com/Yati_01.jpg">
+  <meta property="og:url" content="https://yatifirecutz.com/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Yati Locs &#8212; Dubai&#8217;s Premier Locs &amp; Black Hair Specialist">
@@ -18,7 +18,8 @@
   <link rel="icon" href="icons/yati_locs_logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -59,18 +60,18 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
 
-    /* ── Design Tokens — Version A: Cinematic Warmth ── */
+    /* ── Design Tokens — Version B: Bold Culture-First ── */
     :root {
-      --bg:           #0D0B08;
-      --surface:      #1A1612;
-      --gold:         #C9A84C;
-      --cream:        #F5EDD6;
-      --terracotta:   #B85C38;
-      --terra-hover:  #96482B;
-      --muted:        #7A6E62;
-      --border:       rgba(201,168,76,0.14);
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-body:    'DM Sans', system-ui, sans-serif;
+      --bg:           #0D1828;
+      --surface:      #152238;
+      --gold:         #F4A925;
+      --cream:        #FDF6E3;
+      --terracotta:   #C94A2A;
+      --terra-hover:  #A83A1E;
+      --muted:        #8BA4C0;
+      --border:       rgba(244,169,37,0.16);
+      --font-display: 'Clash Display', 'Impact', sans-serif;
+      --font-body:    'Outfit', system-ui, sans-serif;
       --radius:       6px;
       --ease:         0.3s ease;
     }
@@ -83,10 +84,10 @@
       overflow-x: hidden;
     }
 
-    /* ── Typography ── */
+    /* ── Typography — Version B ── */
     h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; }
-    h1 { font-size: clamp(3rem, 7.5vw, 6.5rem); font-weight: 800; line-height: 1.02; }
-    h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+    h1 { font-size: clamp(3rem, 7.5vw, 6.5rem); font-weight: 700; line-height: 1.02; letter-spacing: 0.03em; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: 0.02em; }
     h3 { font-size: clamp(1.05rem, 1.8vw, 1.3rem); font-weight: 700; }
 
     /* ── Navigation ── */
@@ -147,14 +148,28 @@
       opacity: 0; transform: translateY(18px);
       animation: fadeUp 0.75s ease 0.25s forwards;
     }
+    /* Version B — three-line hero headline */
+    .hero-headline {
+      display: grid; gap: 0.1em; text-align: center; margin-bottom: 1.25rem;
+    }
+    .hl-small {
+      display: block;
+      font-family: var(--font-display); font-size: clamp(1rem, 2.8vw, 1.75rem);
+      font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hl-big {
+      display: block;
+      font-family: var(--font-display); font-size: clamp(4rem, 13vw, 9.5rem);
+      font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;
+      color: var(--cream); line-height: 0.92;
+    }
     .hero h1 {
       color: var(--cream); margin-bottom: 1.25rem;
       opacity: 0; transform: translateY(18px);
       animation: fadeUp 0.75s ease 0.5s forwards;
     }
-    .hero h1 em {
-      font-style: italic; color: var(--gold);
-    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
     .hero-sub {
       font-size: clamp(1rem, 2.2vw, 1.2rem);
       color: rgba(245,237,214,0.78); margin-bottom: 2.5rem;
@@ -170,7 +185,7 @@
     /* ── Kente Divider (SVG strip) ── */
     .kente-divider {
       width: 100%; height: 8px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='8'%3E%3Crect x='0' y='0' width='12' height='8' fill='%23C9A84C'/%3E%3Crect x='12' y='0' width='12' height='8' fill='%23B85C38'/%3E%3Crect x='24' y='0' width='12' height='8' fill='%23C9A84C'/%3E%3Crect x='36' y='0' width='12' height='8' fill='%230D0B08'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='8'%3E%3Crect x='0' y='0' width='12' height='8' fill='%23F4A925'/%3E%3Crect x='12' y='0' width='12' height='8' fill='%23C94A2A'/%3E%3Crect x='24' y='0' width='12' height='8' fill='%23F4A925'/%3E%3Crect x='36' y='0' width='12' height='8' fill='%230D1828'/%3E%3C/svg%3E");
       background-repeat: repeat-x;
       background-size: 48px 8px;
       flex-shrink: 0;
@@ -498,10 +513,13 @@
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Dubai&#8200;&middot;&#8200;UAE</p>
-      <h1>Your Crown<br>Deserves a <em>Master</em></h1>
+      <div class="hero-headline" style="margin-bottom:1.25rem;opacity:0;transform:translateY(18px);animation:fadeUp 0.75s ease 0.5s forwards;">
+        <span class="hl-small">The Locsmith</span>
+        <span class="hl-big">is in<br>Dubai</span>
+        <span class="hl-small">Culture.&#160; Care.&#160; Craft.</span>
+      </div>
       <p class="hero-sub">
-        Dubai&#8217;s premier locs and Black hair specialist.<br>
-        Culture.&#160;&#160;Care.&#160;&#160;Craft.
+        Black hair. World class hands. Book your crown today.
       </p>
       <div class="hero-actions">
         <a href="#gallery" class="btn-outline">See the Work</a>
