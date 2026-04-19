@@ -1,357 +1,981 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yati Locs - Dubai's Premier Black Hair & Locs Specialist</title>
-    <meta name="description" content="Dubai's premier black hair & locs specialist. Culture. Care. Craft. Book your appointment today.">
-    <link rel="icon" href="icons/yati_locs_logo.svg">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-placeholder.png');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-        
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #2A9D8F;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin: 10px;
-            transition: background 0.3s;
-        }
-        
-        .btn:hover {
-            background: #E9C46A;
-        }
-        
-        .section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .gallery {
-            background: #F1E9DB;
-        }
-        
-        .services {
-            background: #F1E9DB;
-        }
-        
-        .legacy {
-            background: #FFF8F0;
-        }
-        
-        .tips {
-            background: #1B1B1B;
-            color: white;
-        }
-        
-        .footer {
-            background: #B85C38;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        
-        h2 {
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .gallery-item img, .gallery-item video {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .service-item {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .legacy-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-        
-        .legacy-content img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .tip-item {
-            background: #333;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        
-        .tip-item h3 {
-            color: #E9C46A;
-            margin-bottom: 10px;
-        }
-        
-        .social-links {
-            margin: 20px 0;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        
-        .social-links img {
-            width: 40px;
-            height: 40px;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .legacy-content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yati Locs &#8212; Dubai&#8217;s Premier Locs &amp; Black Hair Specialist</title>
+  <meta name="description" content="Expert locs creation, maintenance, styling and Black hair care in Dubai. Book with Yati &#8212; the go-to locs specialist for Dubai&#8217;s African diaspora. WhatsApp +971558487022.">
+  <link rel="canonical" href="https://yatilocs.com/">
+  <meta property="og:title" content="Yati Locs &#8212; Dubai&#8217;s Premier Locs &amp; Black Hair Specialist">
+  <meta property="og:description" content="Expert locs creation, maintenance, and styling in Dubai. Book with Yati &#8212; the go-to locs specialist for Dubai&#8217;s African diaspora.">
+  <meta property="og:image" content="https://yatilocs.com/Yati_01.jpg">
+  <meta property="og:url" content="https://yatilocs.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yati Locs &#8212; Dubai&#8217;s Premier Locs &amp; Black Hair Specialist">
+  <meta name="twitter:description" content="Expert locs creation, maintenance, and styling in Dubai. Book with Yati today.">
+  <meta name="twitter:image" content="https://yatilocs.com/Yati_01.jpg">
+  <link rel="icon" href="icons/yati_locs_logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Yati Locs",
+    "description": "Dubai's premier locs and Black hair specialist. Expert loc creation, maintenance, styling, and beard grooming.",
+    "url": "https://yatilocs.com",
+    "telephone": "+971558487022",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "sameAs": [
+      "https://instagram.com/yatifirecutz",
+      "https://tiktok.com/@yatifirecutz"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 09:00-20:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Locs Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Loc Creation Starter Locs Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Loc Maintenance and Retwist Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Loc Styling Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wash and Deep Conditioning Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Scalp Detox and Hydration Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Beard Grooming and Lining Dubai"}}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    /* ── Design Tokens — Version A: Cinematic Warmth ── */
+    :root {
+      --bg:           #0D0B08;
+      --surface:      #1A1612;
+      --gold:         #C9A84C;
+      --cream:        #F5EDD6;
+      --terracotta:   #B85C38;
+      --terra-hover:  #96482B;
+      --muted:        #7A6E62;
+      --border:       rgba(201,168,76,0.14);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --radius:       6px;
+      --ease:         0.3s ease;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--cream);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Typography ── */
+    h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; }
+    h1 { font-size: clamp(3rem, 7.5vw, 6.5rem); font-weight: 800; line-height: 1.02; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+    h3 { font-size: clamp(1.05rem, 1.8vw, 1.3rem); font-weight: 700; }
+
+    /* ── Navigation ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2rem;
+      transition: background var(--ease), backdrop-filter var(--ease), border-color var(--ease);
+      border-bottom: 1px solid transparent;
+    }
+    .nav.scrolled {
+      background: rgba(13,11,8,0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom-color: var(--border);
+    }
+    .nav-logo img { height: 44px; width: auto; display: block; }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: var(--terracotta); color: var(--cream);
+      text-decoration: none; padding: 0.6rem 1.4rem;
+      border-radius: 2rem; font-family: var(--font-body);
+      font-size: 0.825rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; touch-action: manipulation;
+      transition: background var(--ease), transform var(--ease);
+      border: none;
+    }
+    .nav-cta:hover  { background: var(--terra-hover); transform: translateY(-1px); }
+    .nav-cta:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative; height: 100vh; min-height: 620px;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; overflow: hidden;
+    }
+    .hero-video {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover; z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(
+        160deg,
+        rgba(13,11,8,0.65) 0%,
+        rgba(13,11,8,0.40) 45%,
+        rgba(13,11,8,0.88) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 860px; padding: 2rem 1.5rem;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-body); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 1.25rem;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp 0.75s ease 0.25s forwards;
+    }
+    .hero h1 {
+      color: var(--cream); margin-bottom: 1.25rem;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp 0.75s ease 0.5s forwards;
+    }
+    .hero h1 em {
+      font-style: italic; color: var(--gold);
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: rgba(245,237,214,0.78); margin-bottom: 2.5rem;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp 0.75s ease 0.75s forwards;
+    }
+    .hero-actions {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp 0.75s ease 1s forwards;
+    }
+
+    /* ── Kente Divider (SVG strip) ── */
+    .kente-divider {
+      width: 100%; height: 8px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='8'%3E%3Crect x='0' y='0' width='12' height='8' fill='%23C9A84C'/%3E%3Crect x='12' y='0' width='12' height='8' fill='%23B85C38'/%3E%3Crect x='24' y='0' width='12' height='8' fill='%23C9A84C'/%3E%3Crect x='36' y='0' width='12' height='8' fill='%230D0B08'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+      background-size: 48px 8px;
+      flex-shrink: 0;
+    }
+
+    /* ── Buttons ── */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: var(--terracotta); color: var(--cream);
+      text-decoration: none; padding: 0.9rem 2rem; border-radius: 2rem;
+      font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+      letter-spacing: 0.02em; touch-action: manipulation; border: none; cursor: pointer;
+      transition: background var(--ease), transform var(--ease), box-shadow var(--ease);
+    }
+    .btn-primary:hover { background: var(--terra-hover); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(184,92,56,0.35); }
+    .btn-primary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: transparent; color: var(--cream); text-decoration: none;
+      padding: 0.9rem 2rem; border-radius: 2rem;
+      border: 1.5px solid rgba(245,237,214,0.38);
+      font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+      letter-spacing: 0.02em; touch-action: manipulation;
+      transition: border-color var(--ease), color var(--ease), transform var(--ease);
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .btn-outline:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    /* ── Social Proof Strip ── */
+    .proof-strip {
+      background: var(--surface);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 0.9rem 2rem;
+      display: flex; align-items: center; justify-content: center;
+      gap: 2rem; flex-wrap: wrap;
+    }
+    .proof-item {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-family: var(--font-body); font-size: 0.82rem; color: var(--muted);
+    }
+    .proof-item strong { color: var(--gold); font-size: 0.9rem; }
+    .proof-dot { color: var(--border); font-size: 1.2rem; }
+
+    /* ── Section Primitives ── */
+    .section {
+      padding: clamp(4rem, 8vw, 6.5rem) clamp(1.25rem, 5vw, 3rem);
+      max-width: 1280px; margin: 0 auto;
+    }
+    .section-dark { background: var(--bg); }
+    .section-surface { background: var(--surface); }
+
+    .label {
+      font-family: var(--font-body); font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--terracotta); margin-bottom: 0.6rem; display: block;
+    }
+    .section-lead {
+      font-size: 1.05rem; color: var(--muted);
+      max-width: 580px; margin-top: 0.75rem;
+    }
+
+    /* ── Scroll Reveal ── */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── Gallery ── */
+    .gallery-header { text-align: center; }
+    .gallery-header .section-lead { margin: 0.75rem auto 0; }
+
+    .masonry {
+      columns: 3; column-gap: 0.625rem; margin-top: 2.5rem;
+    }
+    @media (max-width: 900px) { .masonry { columns: 2; } }
+    @media (max-width: 520px)  { .masonry { columns: 1; } }
+
+    .masonry-item {
+      break-inside: avoid; /* critical — prevents image splits */
+      margin-bottom: 0.625rem;
+      border-radius: var(--radius); overflow: hidden;
+      cursor: pointer; position: relative;
+      display: block;
+    }
+    .masonry-item img,
+    .masonry-item video {
+      width: 100%; height: auto; display: block;
+      transition: transform 0.5s ease;
+    }
+    .masonry-item:hover img,
+    .masonry-item:hover video { transform: scale(1.04); }
+    .masonry-overlay {
+      position: absolute; inset: 0;
+      background: rgba(13,11,8,0);
+      transition: background var(--ease);
+      pointer-events: none;
+    }
+    .masonry-item:hover .masonry-overlay { background: rgba(13,11,8,0.38); }
+    .gallery-cta { text-align: center; margin-top: 3rem; }
+
+    /* ── Lightbox ── */
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 1000;
+      background: rgba(13,11,8,0.97);
+      align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-inner {
+      position: relative; max-width: 92vw; max-height: 92vh;
+    }
+    .lightbox-inner img {
+      max-width: 90vw; max-height: 86vh;
+      border-radius: var(--radius); display: block;
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute; top: -2.75rem; right: 0;
+      background: none; border: none; color: var(--cream);
+      font-size: 2.25rem; cursor: pointer; line-height: 1;
+      touch-action: manipulation; font-family: var(--font-body);
+    }
+    .lightbox-close:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    /* Focus sentinel for trap */
+    .lightbox-sentinel { position: absolute; width: 1px; height: 1px; opacity: 0; }
+
+    /* ── Services ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem; margin-top: 2.5rem;
+    }
+    .service-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.75rem 1.5rem;
+      border-left: 3px solid var(--terracotta);
+      transition: border-color var(--ease), transform var(--ease), box-shadow var(--ease);
+    }
+    .service-card:hover {
+      border-color: var(--gold);
+      border-left-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.4);
+    }
+    .service-num {
+      font-family: var(--font-display); font-size: 2.75rem; font-weight: 800;
+      color: rgba(201,168,76,0.18); line-height: 1; margin-bottom: 0.6rem;
+    }
+    .service-card h3 { color: var(--cream); margin-bottom: 0.5rem; }
+    .service-card p  { color: var(--muted); font-size: 0.93rem; }
+
+    /* ── Legacy ── */
+    .legacy-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 6vw, 5rem); align-items: center;
+    }
+    @media (max-width: 768px) { .legacy-grid { grid-template-columns: 1fr; } }
+    .legacy-logo-wrap {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .legacy-logo-wrap img {
+      width: 100%; max-width: 400px; height: auto; border-radius: 8px;
+    }
+    .legacy-copy p {
+      color: rgba(245,237,214,0.73); font-size: 1.08rem; margin-bottom: 1.2rem;
+    }
+    .legacy-copy .pull {
+      font-family: var(--font-display); font-style: italic;
+      font-size: 1.2rem; color: var(--gold);
+      border-left: 2px solid var(--terracotta);
+      padding-left: 1rem; margin: 1.5rem 0;
+      display: block;
+    }
+    .legacy-copy h2 { margin-bottom: 1.25rem; }
+
+    /* ── Tips ── */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem; margin-top: 2.5rem;
+    }
+    .tip-card {
+      border-left: 3px solid var(--terracotta);
+      padding: 1.4rem 1.4rem 1.4rem 1.6rem;
+      background: var(--surface); border-radius: 0 8px 8px 0;
+    }
+    .tip-num {
+      font-family: var(--font-body); font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.18em; color: var(--terracotta); margin-bottom: 0.4rem;
+    }
+    .tip-card h3 { color: var(--cream); margin-bottom: 0.4rem; font-size: 1.05rem; }
+    .tip-card p  { color: var(--muted); font-size: 0.92rem; }
+
+    /* ── Footer ── */
+    .footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: clamp(3rem, 6vw, 5rem) clamp(1.25rem, 5vw, 3rem);
+      text-align: center;
+    }
+    .footer-logo img { height: 52px; width: auto; margin-bottom: 1.25rem; }
+    .footer-tagline {
+      font-family: var(--font-display); font-size: 1.5rem;
+      font-style: italic; color: var(--cream); margin-bottom: 2rem;
+    }
+    .social-links {
+      display: flex; align-items: center; justify-content: center;
+      gap: 1rem; margin: 1.25rem 0 2.25rem;
+    }
+    .social-links a {
+      display: flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid rgba(201,168,76,0.22);
+      transition: border-color var(--ease), background var(--ease);
+      touch-action: manipulation;
+    }
+    .social-links a:hover { border-color: var(--gold); background: rgba(201,168,76,0.1); }
+    .social-links a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .social-links img { width: 22px; height: 22px; }
+
+    /* ── Email Signup ── */
+    .email-box {
+      background: rgba(201,168,76,0.05);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 10px; padding: 2.25rem 2rem;
+      max-width: 460px; margin: 2rem auto 0;
+    }
+    .email-box h3 { color: var(--cream); font-size: 1.25rem; margin-bottom: 0.4rem; }
+    .email-box p  { color: var(--muted); font-size: 0.88rem; margin-bottom: 1.4rem; }
+    .signup-form input {
+      width: 100%; padding: 0.85rem 1rem;
+      background: var(--bg); border: 1px solid rgba(201,168,76,0.18);
+      border-radius: var(--radius); color: var(--cream);
+      font-family: var(--font-body); font-size: 0.93rem;
+      margin-bottom: 0.65rem; touch-action: manipulation;
+    }
+    .signup-form input:focus {
+      outline: 2px solid var(--gold); outline-offset: 0; border-color: transparent;
+    }
+    .signup-form input[type="email"] { spellcheck: false; }
+    .signup-form button {
+      width: 100%; padding: 0.9rem 1.5rem;
+      background: var(--terracotta); color: var(--cream);
+      border: none; border-radius: 2rem;
+      font-family: var(--font-body); font-size: 0.93rem; font-weight: 600;
+      cursor: pointer; touch-action: manipulation;
+      transition: background var(--ease);
+    }
+    .signup-form button:hover { background: var(--terra-hover); }
+    .signup-form button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    .footer-copy {
+      margin-top: 2.25rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(201,168,76,0.1);
+      color: var(--muted); font-size: 0.78rem;
+    }
+
+    /* ── Floating WhatsApp ── */
+    .wa-float {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999;
+      display: flex; align-items: center; justify-content: center;
+      width: 58px; height: 58px;
+      background: #25D366; border-radius: 50%;
+      box-shadow: 0 4px 22px rgba(37,211,102,0.42);
+      text-decoration: none; touch-action: manipulation;
+      transition: transform var(--ease), box-shadow var(--ease);
+    }
+    .wa-float:hover { transform: scale(1.08); box-shadow: 0 6px 30px rgba(37,211,102,0.62); }
+    .wa-float:focus-visible { outline: 2px solid #25D366; outline-offset: 4px; }
+    .wa-float img { width: 28px; height: 28px; pointer-events: none; }
+    .wa-pulse {
+      position: absolute; inset: -5px; border-radius: 50%;
+      border: 2px solid rgba(37,211,102,0.45);
+      animation: pulse 2.6s ease-out infinite;
+    }
+
+    /* ── Keyframes ── */
+    @keyframes fadeUp { to { opacity: 1; transform: none; } }
+    @keyframes pulse  { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.6); opacity: 0; } }
+
+    /* ── Reduced Motion ── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .nav { padding: 1rem 1.25rem; }
+      .hero-actions { flex-direction: column; align-items: center; }
+      .btn-primary, .btn-outline { width: 100%; max-width: 300px; justify-content: center; }
+      .proof-dot { display: none; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div>
-            <h1>Yati Locs</h1>
-            <p>Dubai's premier black hair & locs specialist.<br>Culture. Care. Craft.</p>
-            <a href="#gallery" class="btn">See the Work</a>
-            <a href="https://wa.me/971558487022" class="btn" target="_blank">Book an Appointment</a>
-        </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <section class="section gallery">
-        <h2>Art in Action</h2>
-        <p style="text-align: center; margin-bottom: 40px;">A look at real transformations and powerful hair moments from the chair of Yati Locs. Bold. Intentional. Rooted.</p>
-        
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="Yati_01.jpg" alt="Locs Art 1">
-            </div>
-            <div class="gallery-item">
-                <img src="Yati_02.jpg" alt="Locs Art 2">
-            </div>
-            <div class="gallery-item">
-                <img src="Yati_03.jpg" alt="Locs Art 3">
-            </div>
-            <div class="gallery-item">
-                <img src="Yati_04.jpg" alt="Locs Art 4">
-            </div>
-            <div class="gallery-item">
-                <video autoplay muted loop>
-                    <source src="YatiVideo_01.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="gallery-item">
-                <video autoplay muted loop>
-                    <source src="YatiVideo_02.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="https://wa.me/971558487022" class="btn" target="_blank">Book an Appointment</a>
-        </div>
-    </section>
+  <!-- Skip Link -->
+  <a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;font-size:0" class="skip-link">Skip to main content</a>
+  <style>.skip-link:focus{position:fixed;top:0.5rem;left:0.5rem;width:auto;height:auto;padding:0.75rem 1.25rem;background:var(--surface);color:var(--cream);font-family:var(--font-body);font-size:0.9rem;z-index:9999;border-radius:4px;overflow:visible;}</style>
 
-    <!-- Services Section -->
-    <section class="section services">
-        <h2>Our Craft</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>✨ Loc Creation (Starter Locs)</h3>
-                <p>Begin your locs journey with expert guidance and care.</p>
-            </div>
-            <div class="service-item">
-                <h3>🔧 Loc Maintenance & Retwist</h3>
-                <p>Keep your locs healthy and well-maintained.</p>
-            </div>
-            <div class="service-item">
-                <h3>✂️ Loc Styling</h3>
-                <p>Barrel Rolls, Two-Strand Twist, Updos and more.</p>
-            </div>
-            <div class="service-item">
-                <h3>💧 Wash & Deep Conditioning</h3>
-                <p>Professional hair care treatments for healthy locs.</p>
-            </div>
-            <div class="service-item">
-                <h3>❤️ Scalp Detox & Hydration</h3>
-                <p>Therapeutic treatments for scalp health.</p>
-            </div>
-            <div class="service-item">
-                <h3>👨 Beard Grooming & Lining</h3>
-                <p>Complete grooming services for the modern man.</p>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="https://wa.me/971558487022" class="btn" target="_blank">Book an Appointment</a>
-        </div>
-    </section>
+  <!-- Navigation -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Yati Locs home">
+      <img src="icons/yati_locs_logo.svg" alt="Yati Locs" width="110" height="44">
+    </a>
+    <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+       class="nav-cta" target="_blank" rel="noopener noreferrer">
+      Book Now
+    </a>
+  </nav>
 
-    <!-- Legacy Section -->
-    <section class="section legacy">
-        <h2>The Locsmith's Legacy</h2>
-        <div class="legacy-content">
-            <img src="yati-placeholder.png" alt="Yati the Locsmith">
-            <div>
-                <p style="font-size: 1.2rem; margin-bottom: 20px;">
-                    With years of hands-on experience, Yati has lived the loc journey — from starter locs to flourishing crowns. 
-                    His expertise with Black hair care and mastery of natural styling has made him the go-to loc specialist in Dubai.
-                </p>
-                <p style="font-size: 1.2rem; margin-bottom: 30px;">
-                    Whether you're looking to begin your locs journey or maintain an existing set, Yati's approach blends culture, 
-                    artistry, and precision. Your crown is safe in the hands of someone who's walked this path many times before.
-                </p>
-                <a href="https://wa.me/971558487022" class="btn" target="_blank">Book with Yati</a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero -->
+  <main id="main">
+  <section class="hero" aria-label="Hero — Your Crown Deserves a Master">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="YatiVideo_01.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Dubai&#8200;&middot;&#8200;UAE</p>
+      <h1>Your Crown<br>Deserves a <em>Master</em></h1>
+      <p class="hero-sub">
+        Dubai&#8217;s premier locs and Black hair specialist.<br>
+        Culture.&#160;&#160;Care.&#160;&#160;Craft.
+      </p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn-outline">See the Work</a>
+        <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+           class="btn-primary" target="_blank" rel="noopener noreferrer">Book with Yati</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Tips Section -->
-    <section class="section tips">
-        <h2>Secrets of the Locsmith</h2>
-        <p style="text-align: center; margin-bottom: 40px; color: #ccc;">
-            Proven guidance for nurturing your crown from the inside out — because real artistry begins with real care.
-        </p>
-        
-        <div class="tips-grid">
-            <div class="tip-item">
-                <h3>Moisture Is the Move</h3>
-                <p>Hydrate your locs regularly with water-based sprays and seal in with natural oils like jojoba or castor.</p>
-            </div>
-            <div class="tip-item">
-                <h3>Sleep Smart</h3>
-                <p>Wrap your hair at night in a satin or silk scarf to reduce friction and retain moisture.</p>
-            </div>
-            <div class="tip-item">
-                <h3>Clean, But Don't Strip</h3>
-                <p>Use sulfate-free shampoos that cleanse without drying. Avoid over-washing — 1-2 times per week is often ideal.</p>
-            </div>
-            <div class="tip-item">
-                <h3>Hands Off!</h3>
-                <p>Avoid excessive twisting or styling to prevent tension and breakage around roots and edges.</p>
-            </div>
-            <div class="tip-item">
-                <h3>Respect the Journey</h3>
-                <p>Locs evolve over time — trust the process, stay consistent, and embrace every phase.</p>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="https://wa.me/971558487022" class="btn" target="_blank">Book an Appointment</a>
-        </div>
-    </section>
+  <!-- Social Proof Strip -->
+  <div class="proof-strip" role="complementary" aria-label="Trust signals">
+    <div class="proof-item">&#9733;&#9733;&#9733;&#9733;&#9733;<strong style="margin-left:0.35rem;">5-Star</strong>&nbsp;Service</div>
+    <span class="proof-dot" aria-hidden="true">&#183;</span>
+    <div class="proof-item"><strong>Dubai&#8217;s #1</strong>&nbsp;Locs Specialist</div>
+    <span class="proof-dot" aria-hidden="true">&#183;</span>
+    <div class="proof-item">Follow&nbsp;<strong>@yatifirecutz</strong></div>
+    <span class="proof-dot" aria-hidden="true">&#183;</span>
+    <div class="proof-item"><strong>+971 55 848 7022</strong></div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <h3>Connect With Yati Locs</h3>
-        <a href="https://wa.me/971558487022" class="btn" target="_blank">Book an Appointment</a>
-        
-        <div class="social-links">
-            <a href="https://instagram.com/yatifirecutz" target="_blank">
-                <img src="icons/Instagram.png" alt="Instagram">
-            </a>
-            <a href="https://tiktok.com/@yatifirecutz" target="_blank">
-                <img src="icons/TikTok.png" alt="TikTok">
-            </a>
-            <a href="https://wa.me/971558487022" target="_blank">
-                <img src="icons/WhatsApp.png" alt="WhatsApp">
-            </a>
+  <!-- Kente Divider -->
+  <div class="kente-divider" aria-hidden="true"></div>
+
+  <!-- Gallery -->
+  <section class="section-dark" id="gallery">
+    <div class="section">
+      <div class="gallery-header reveal">
+        <span class="label">Art in Action</span>
+        <h2>Real Transformations.<br>Real Craft.</h2>
+        <p class="section-lead">Every photo is a real transformation. Every video is a real moment from the chair. This is what Yati does &#8212; not just hair, but craft.</p>
+      </div>
+
+      <div class="masonry" role="list" aria-label="Gallery of Yati Locs transformations">
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_01.jpg" data-alt="Starter locs creation Dubai by Yati Locs">
+          <img src="Yati_01.jpg" alt="Starter locs creation Dubai by Yati Locs"
+               width="600" height="750" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
         </div>
-        
-        <div style="margin-top: 40px;">
-            <h3>Get Your Free Locs Maintenance Guide</h3>
-            <p style="margin: 20px 0;">Sign up below and receive expert insights directly in your inbox — perfect for keeping your crown thriving.</p>
-            
-            <form style="max-width: 400px; margin: 0 auto;">
-                <input type="text" placeholder="Name" style="width: 100%; padding: 15px; margin: 10px 0; border: none; border-radius: 5px;">
-                <input type="email" placeholder="Email Address" style="width: 100%; padding: 15px; margin: 10px 0; border: none; border-radius: 5px;">
-                <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Get the Free Guide</button>
-            </form>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_02.jpg" data-alt="Loc maintenance and retwist Dubai">
+          <img src="Yati_02.jpg" alt="Loc maintenance and retwist Dubai"
+               width="600" height="800" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
         </div>
-        
-        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2);">
-            <p>&copy; 2025 Yati Locs. All rights reserved.</p>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_03.jpg" data-alt="Loc styling Dubai — barrel rolls and updos">
+          <img src="Yati_03.jpg" alt="Loc styling Dubai — barrel rolls and updos"
+               width="600" height="700" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
         </div>
-    </footer>
+
+        <!-- Video items: src set directly for iOS autoplay; preload="none" for performance -->
+        <div class="masonry-item reveal" role="listitem">
+          <video autoplay muted loop playsinline preload="none"
+                 aria-label="Yati Locs transformation video Dubai">
+            <source src="YatiVideo_02.mp4" type="video/mp4">
+          </video>
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_04.jpg" data-alt="Black hair specialist Dubai — loc journey">
+          <img src="Yati_04.jpg" alt="Black hair specialist Dubai — loc journey"
+               width="600" height="750" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_05.jpg" data-alt="Locs specialist Dubai — natural hair care">
+          <img src="Yati_05.jpg" alt="Locs specialist Dubai — natural hair care"
+               width="600" height="800" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem">
+          <video autoplay muted loop playsinline preload="none"
+                 aria-label="Yati loc styling process Dubai">
+            <source src="YatiVideo_03.mp4" type="video/mp4">
+          </video>
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_06.jpg" data-alt="Loc retwist and maintenance Dubai">
+          <img src="Yati_06.jpg" alt="Loc retwist and maintenance Dubai"
+               width="600" height="720" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_07.jpg" data-alt="African diaspora hair care Dubai — Yati Locs">
+          <img src="Yati_07.jpg" alt="African diaspora hair care Dubai — Yati Locs"
+               width="600" height="760" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem">
+          <video autoplay muted loop playsinline preload="none"
+                 aria-label="Yati Locs wash and deep conditioning Dubai">
+            <source src="YatiVideo_04.mp4" type="video/mp4">
+          </video>
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_08.jpg" data-alt="Dreadlocks Dubai — expert loc creation">
+          <img src="Yati_08.jpg" alt="Dreadlocks Dubai — expert loc creation"
+               width="600" height="800" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_09.jpg" data-alt="Scalp detox and hydration locs Dubai">
+          <img src="Yati_09.jpg" alt="Scalp detox and hydration locs Dubai"
+               width="600" height="740" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem">
+          <video autoplay muted loop playsinline preload="none"
+                 aria-label="Yati Locs beard grooming Dubai">
+            <source src="YatiVideo_05.mp4" type="video/mp4">
+          </video>
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_10.jpg" data-alt="Premium locs styling Dubai — two-strand twist">
+          <img src="Yati_10.jpg" alt="Premium locs styling Dubai — two-strand twist"
+               width="600" height="760" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_11.jpg" data-alt="Loc updo styling Dubai — Yati Locs specialist">
+          <img src="Yati_11.jpg" alt="Loc updo styling Dubai — Yati Locs specialist"
+               width="600" height="820" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem">
+          <video autoplay muted loop playsinline preload="none"
+                 aria-label="Yati locs transformation before and after Dubai">
+            <source src="YatiVideo_06.mp4" type="video/mp4">
+          </video>
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_12.jpg" data-alt="Starter locs Dubai — natural hair journey">
+          <img src="Yati_12.jpg" alt="Starter locs Dubai — natural hair journey"
+               width="600" height="750" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_13.jpg" data-alt="Black hair Dubai — locs specialist Yati">
+          <img src="Yati_13.jpg" alt="Black hair Dubai — locs specialist Yati"
+               width="600" height="780" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem">
+          <video autoplay muted loop playsinline preload="none"
+                 aria-label="Yati Locs styling session Dubai">
+            <source src="YatiVideo_07.mp4" type="video/mp4">
+          </video>
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_14.jpg" data-alt="Dreadlocks maintenance Dubai — expert care">
+          <img src="Yati_14.jpg" alt="Dreadlocks maintenance Dubai — expert care"
+               width="600" height="760" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_15.jpg" data-alt="Locs and beard grooming Dubai — Yati Locs">
+          <img src="Yati_15.jpg" alt="Locs and beard grooming Dubai — Yati Locs"
+               width="600" height="800" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_16.jpg" data-alt="Natural Black hair care Dubai">
+          <img src="Yati_16.jpg" alt="Natural Black hair care Dubai"
+               width="600" height="740" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_17.jpg" data-alt="Crown locs styling Dubai — African diaspora hair">
+          <img src="Yati_17.jpg" alt="Crown locs styling Dubai — African diaspora hair"
+               width="600" height="760" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="masonry-item reveal" role="listitem" tabindex="0"
+             data-src="Yati_18.jpg" data-alt="Yati Locs Dubai — world class locs care">
+          <img src="Yati_18.jpg" alt="Yati Locs Dubai — world class locs care"
+               width="600" height="800" loading="lazy">
+          <div class="masonry-overlay" aria-hidden="true"></div>
+        </div>
+
+      </div><!-- /masonry -->
+
+      <div class="gallery-cta reveal">
+        <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+           class="btn-primary" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox"
+       role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <span class="lightbox-sentinel" tabindex="0" id="lb-sentinel-start" aria-hidden="true"></span>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close photo viewer">&times;</button>
+      <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:86vh;display:block;border-radius:6px;object-fit:contain;">
+    </div>
+    <span class="lightbox-sentinel" tabindex="0" id="lb-sentinel-end" aria-hidden="true"></span>
+  </div>
+
+  <!-- Kente Divider -->
+  <div class="kente-divider" aria-hidden="true"></div>
+
+  <!-- Services -->
+  <section class="section-surface" id="services">
+    <div class="section">
+      <div class="reveal">
+        <span class="label">Our Craft</span>
+        <h2>What We Do</h2>
+        <p class="section-lead">Every service is a conversation between your hair and someone who has lived the journey himself.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <h3>Loc Creation</h3>
+          <p>Begin your locs journey with expert guidance and a foundation built to last.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">02</div>
+          <h3>Maintenance and Retwist</h3>
+          <p>Keep your locs healthy, tight, and well-maintained at every stage of growth.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">03</div>
+          <h3>Loc Styling</h3>
+          <p>Barrel rolls, two-strand twists, updos and beyond. Your crown, styled for the moment.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">04</div>
+          <h3>Wash and Deep Conditioning</h3>
+          <p>Professional care treatments that cleanse, nourish, and restore your locs from root to tip.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">05</div>
+          <h3>Scalp Detox and Hydration</h3>
+          <p>Therapeutic treatments targeting scalp health &#8212; the foundation of everything that grows from it.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">06</div>
+          <h3>Beard Grooming and Lining</h3>
+          <p>Complete grooming for the modern man. Because the whole picture matters.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;" class="reveal">
+        <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+           class="btn-primary" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kente Divider -->
+  <div class="kente-divider" aria-hidden="true"></div>
+
+  <!-- Legacy -->
+  <section class="section-dark" id="about">
+    <div class="section">
+      <div class="legacy-grid">
+        <div class="legacy-logo-wrap reveal">
+          <img src="yati-locs-logo.png"
+               alt="Yati Locs brand mark — Dubai's premier locs specialist"
+               width="400" height="400" loading="lazy">
+        </div>
+        <div class="legacy-copy reveal">
+          <span class="label">The Locsmith&#8217;s Legacy</span>
+          <h2>He Didn&#8217;t Just Learn Locs.<br>He Lived Them.</h2>
+          <p>From his first set of starter locs to the flourishing crowns he tends today, every technique Yati uses is something he has worn, tested, and refined on himself. That is what sets him apart in Dubai &#8212; not just the skill, but the lived understanding of what your hair needs at every stage of the journey.</p>
+          <em class="pull">&#8220;Your crown is safe in hands that have walked this path.&#8221;</em>
+          <p>Whether you are starting fresh or maintaining a crown you have carried for years, you are in hands that know the path. Because Yati has walked it too.</p>
+          <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+             class="btn-primary" target="_blank" rel="noopener noreferrer" style="margin-top:0.5rem;">Book with Yati</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kente Divider -->
+  <div class="kente-divider" aria-hidden="true"></div>
+
+  <!-- Tips -->
+  <section class="section-surface" id="tips">
+    <div class="section">
+      <div class="reveal" style="text-align:center;">
+        <span class="label">Secrets of the Locsmith</span>
+        <h2>Care That Comes From Experience</h2>
+        <p class="section-lead" style="margin:0.75rem auto 0;">Proven guidance for nurturing your crown from the inside out. Real artistry begins with real care.</p>
+      </div>
+      <div class="tips-grid" style="margin-top:3rem;">
+        <div class="tip-card reveal">
+          <div class="tip-num">01</div>
+          <h3>Moisture Is the Move</h3>
+          <p>Hydrate your locs regularly with water-based sprays and seal with natural oils like jojoba or castor.</p>
+        </div>
+        <div class="tip-card reveal">
+          <div class="tip-num">02</div>
+          <h3>Sleep Smart</h3>
+          <p>Wrap your hair at night in a satin or silk scarf to reduce friction and retain moisture while you rest.</p>
+        </div>
+        <div class="tip-card reveal">
+          <div class="tip-num">03</div>
+          <h3>Clean, But Don&#8217;t Strip</h3>
+          <p>Use sulfate-free shampoos that cleanse without drying. One to two washes per week is often ideal.</p>
+        </div>
+        <div class="tip-card reveal">
+          <div class="tip-num">04</div>
+          <h3>Hands Off</h3>
+          <p>Avoid excessive twisting or manipulation. Tension at the roots and edges adds up over time.</p>
+        </div>
+        <div class="tip-card reveal">
+          <div class="tip-num">05</div>
+          <h3>Respect the Journey</h3>
+          <p>Locs evolve over time. Trust the process, stay consistent, and embrace every phase of growth.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;" class="reveal">
+        <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+           class="btn-primary" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="icons/yati_locs_logo.svg" alt="Yati Locs" width="96" height="38">
+    </div>
+    <p class="footer-tagline">Culture. Care. Craft.</p>
+
+    <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+       class="btn-primary" target="_blank" rel="noopener noreferrer"
+       style="display:inline-flex;margin-bottom:1.5rem;">
+      Book an Appointment
+    </a>
+
+    <div class="social-links">
+      <a href="https://instagram.com/yatifirecutz" target="_blank" rel="noopener noreferrer"
+         aria-label="Yati Locs on Instagram">
+        <img src="icons/Instagram.png" alt="" width="22" height="22" aria-hidden="true">
+      </a>
+      <a href="https://tiktok.com/@yatifirecutz" target="_blank" rel="noopener noreferrer"
+         aria-label="Yati Locs on TikTok">
+        <img src="icons/TikTok.png" alt="" width="22" height="22" aria-hidden="true">
+      </a>
+      <a href="https://wa.me/971558487022" target="_blank" rel="noopener noreferrer"
+         aria-label="Chat with Yati Locs on WhatsApp">
+        <img src="icons/whatsappWhite.png" alt="" width="22" height="22" aria-hidden="true">
+      </a>
+    </div>
+
+    <div class="email-box">
+      <h3>Free Locs Maintenance Guide</h3>
+      <p>Expert insights for keeping your crown thriving. Delivered straight to your inbox.</p>
+      <form class="signup-form"
+            action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID"
+            method="POST">
+        <label for="signup-name" style="position:absolute;width:1px;height:1px;overflow:hidden;">Your name</label>
+        <input type="text" id="signup-name" name="name"
+               placeholder="Your name" autocomplete="given-name" required>
+        <label for="signup-email" style="position:absolute;width:1px;height:1px;overflow:hidden;">Email address</label>
+        <input type="email" id="signup-email" name="email"
+               placeholder="Email address" autocomplete="email" required>
+        <button type="submit">Get the Free Guide</button>
+      </form>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2026 Yati Locs. All rights reserved. Dubai, UAE.</p>
+    </div>
+  </footer>
+  </main><!-- /main -->
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment"
+     class="wa-float" target="_blank" rel="noopener noreferrer"
+     aria-label="Book appointment on WhatsApp">
+    <span class="wa-pulse" aria-hidden="true"></span>
+    <img src="icons/whatsappWhite.svg" alt="" width="28" height="28" aria-hidden="true">
+  </a>
+
+  <script>
+    // ── Nav scroll effect ──
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Scroll reveal (fires once per element) ──
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const delay = parseInt(entry.target.dataset.delay || '0', 10);
+          setTimeout(() => entry.target.classList.add('visible'), delay);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+
+    revealEls.forEach((el, i) => {
+      el.dataset.delay = String((i % 4) * 75);
+      revealObserver.observe(el);
+    });
+
+    // ── Lightbox with focus trap ──
+    const lightbox    = document.getElementById('lightbox');
+    const lbImg       = document.getElementById('lightbox-img');
+    const lbClose     = document.getElementById('lightbox-close');
+    const lbSentStart = document.getElementById('lb-sentinel-start');
+    const lbSentEnd   = document.getElementById('lb-sentinel-end');
+    let lbTrigger     = null;
+
+    function openLightbox(src, alt, trigger) {
+      lbImg.src = src;
+      lbImg.alt = alt;
+      lbTrigger = trigger;
+      lightbox.classList.add('open');
+      lbClose.focus();
+    }
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lbImg.src = '';
+      if (lbTrigger) lbTrigger.focus();
+      lbTrigger = null;
+    }
+
+    // Focus trap sentinels
+    lbSentStart.addEventListener('focus', () => lbClose.focus());
+    lbSentEnd.addEventListener('focus', () => lbClose.focus());
+
+    document.querySelectorAll('.masonry-item[data-src]').forEach(item => {
+      item.addEventListener('click', () => {
+        openLightbox(item.dataset.src, item.dataset.alt || '', item);
+      });
+      item.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(item.dataset.src, item.dataset.alt || '', item);
+        }
+      });
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  </script>
 </body>
 </html>
