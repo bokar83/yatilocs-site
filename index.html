@@ -344,24 +344,14 @@
       background: linear-gradient(135deg, var(--surface-2) 0%, rgba(201,168,76,0.06) 100%);
       border: 1px solid rgba(201,168,76,0.22); border-radius: 16px;
       padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3.5rem);
-      display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem);
-      align-items: center; max-width: 960px; margin: 3rem auto 0;
+      max-width: 720px; margin: 3rem auto 0;
     }
-    @media (max-width: 680px) { .guide-offer { grid-template-columns: 1fr; } }
     .guide-copy .eyebrow { margin-bottom: 0.5rem; }
     .guide-copy h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
     .guide-copy p { color: rgba(245,237,214,0.72); font-size: 1rem; margin-bottom: 0; }
     .guide-list { list-style: none; margin: 1.25rem 0 1.75rem; }
     .guide-list li { display: flex; align-items: flex-start; gap: 0.6rem; color: var(--cream); font-size: 0.92rem; padding: 0.35rem 0; }
     .guide-list li::before { content: '\2713'; color: var(--gold); font-weight: 700; flex-shrink: 0; margin-top: 0.05rem; }
-    .guide-form input {
-      width: 100%; padding: 0.85rem 1rem; margin-bottom: 0.65rem;
-      background: var(--bg); border: 1px solid rgba(201,168,76,0.2);
-      border-radius: var(--r); color: var(--cream);
-      font-family: var(--fb); font-size: 0.93rem; touch-action: manipulation;
-    }
-    .guide-form input:focus { outline: 2px solid var(--gold); outline-offset: 0; border-color: transparent; }
-    .guide-form button { width: 100%; }
 
     /* ── Footer ── */
     .footer {
@@ -778,16 +768,7 @@
           <li>The signs your locs need a professional, not a YouTube video</li>
           <li>Month-by-month care guide for starter locs</li>
         </ul>
-      </div>
-      <div>
-        <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.1rem;">Enter your name and email. The guide opens instantly. Free, no strings.</p>
-        <form class="guide-form" id="guide-form" onsubmit="sendGuide(event)">
-          <label for="g-name" style="position:absolute;width:1px;height:1px;overflow:hidden;">Your name</label>
-          <input type="text" id="g-name" placeholder="Your name" autocomplete="given-name" required>
-          <label for="g-email" style="position:absolute;width:1px;height:1px;overflow:hidden;">Email address</label>
-          <input type="email" id="g-email" placeholder="Email address" autocomplete="email" required>
-          <button type="submit" class="btn btn-gold">Send Me the Guide</button>
-        </form>
+        <a href="guide.html" class="btn btn-gold" target="_blank" rel="noopener">Read the Free Guide</a>
       </div>
     </div>
   </div>
@@ -903,23 +884,6 @@
   lbClose.addEventListener('click', closeLb);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
 
-  // Guide form — opens guide instantly, fires lead-capture email in background
-  function sendGuide(e) {
-    e.preventDefault();
-    const name  = document.getElementById('g-name').value.trim();
-    const email = document.getElementById('g-email').value.trim();
-    // Open the guide immediately in a new tab
-    window.open('guide.html', '_blank');
-    // Fire lead-capture mailto in background (user's email client handles it silently)
-    const subj = encodeURIComponent('New Guide Request — ' + name);
-    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nSource: yatilocs.com/guide');
-    const link = document.createElement('a');
-    link.href = 'mailto:bokar83@gmail.com?subject=' + subj + '&body=' + body;
-    link.style.display = 'none';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
 </script>
 </body>
 </html>
