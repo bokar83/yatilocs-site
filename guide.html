@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Locs Maintenance Guide &#8212; Yati Locs Dubai</title>
+  <meta name="description" content="Yati's complete guide to maintaining healthy, thriving locs in Dubai's climate. Wash routines, oils, sleep care, and month-by-month starter tips.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yatilocs.com/guide">
+  <link rel="icon" href="icons/yati_locs_logo.svg">
+
+  <!-- OG -->
+  <meta property="og:title" content="Free Locs Maintenance Guide — Yati Locs Dubai">
+  <meta property="og:description" content="Yati's complete guide to maintaining healthy, thriving locs in Dubai's climate.">
+  <meta property="og:url" content="https://yatilocs.com/guide">
+  <meta property="og:type" content="article">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0D0B08;
+      --surface: #161210;
+      --surface-2: #1E1A16;
+      --gold: #C9A84C;
+      --gold-dim: rgba(201,168,76,0.12);
+      --cream: #F5EDD6;
+      --terra: #B85C38;
+      --terra-h: #96482B;
+      --muted: #7A6E62;
+      --border: rgba(201,168,76,0.13);
+      --fd: 'Playfair Display', Georgia, serif;
+      --fb: 'DM Sans', system-ui, sans-serif;
+      --max: 760px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--fb);
+      line-height: 1.7;
+    }
+
+    /* ── Nav ── */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(13,11,8,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: var(--fd);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--cream); }
+    .nav-back svg { width: 16px; height: 16px; }
+
+    /* ── Kente divider ── */
+    .kente {
+      width: 100%;
+      height: 5px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='5'%3E%3Crect x='0' y='0' width='12' height='5' fill='%23C9A84C'/%3E%3Crect x='12' y='0' width='12' height='5' fill='%23B85C38'/%3E%3Crect x='24' y='0' width='12' height='5' fill='%23C9A84C'/%3E%3Crect x='36' y='0' width='12' height='5' fill='%230D0B08'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+      background-size: 48px 5px;
+    }
+
+    /* ── Hero ── */
+    .guide-hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .guide-label {
+      display: inline-block;
+      background: var(--gold-dim);
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .guide-hero h1 {
+      font-family: var(--fd);
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .guide-hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .guide-hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+    .guide-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .guide-meta span { display: flex; align-items: center; gap: 0.35rem; }
+    .guide-meta svg { width: 15px; height: 15px; fill: var(--gold); flex-shrink: 0; }
+
+    /* ── TOC ── */
+    .toc-card {
+      max-width: var(--max);
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+    .toc-inner {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.75rem 2rem;
+    }
+    .toc-title {
+      font-family: var(--fd);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .toc-list li { counter-increment: toc; }
+    .toc-list a {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .toc-list a:hover { color: var(--gold); }
+    .toc-list a::before {
+      content: counter(toc, decimal-leading-zero);
+      color: var(--terra);
+      font-weight: 700;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      padding-top: 0.1rem;
+    }
+    .toc-list { counter-reset: toc; }
+
+    /* ── Content ── */
+    .guide-content {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+    }
+    .guide-section {
+      margin-bottom: 4rem;
+      padding-top: 1rem;
+    }
+    .section-number {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 0.5rem;
+    }
+    .guide-section h2 {
+      font-family: var(--fd);
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+      line-height: 1.2;
+    }
+    .guide-section h2 em { font-style: italic; color: var(--gold); }
+    .guide-section p {
+      color: #C4BAB0;
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+    }
+    .guide-section p strong { color: var(--cream); font-weight: 600; }
+
+    .tip-box {
+      background: var(--surface);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 0.75rem 0.75rem 0;
+      padding: 1.1rem 1.35rem;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+      color: var(--cream);
+    }
+    .tip-box strong { color: var(--gold); display: block; margin-bottom: 0.3rem; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .warning-box {
+      background: rgba(184,92,56,0.1);
+      border-left: 3px solid var(--terra);
+      border-radius: 0 0.75rem 0.75rem 0;
+      padding: 1.1rem 1.35rem;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+      color: var(--cream);
+    }
+    .warning-box strong { color: var(--terra); display: block; margin-bottom: 0.3rem; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin: 1.25rem 0;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: #C4BAB0;
+      font-size: 0.95rem;
+    }
+    .checklist li::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background: var(--gold-dim);
+      border: 1.5px solid var(--gold);
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+    .checklist li strong { color: var(--cream); }
+
+    .oil-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .oil-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.1rem;
+    }
+    .oil-card .oil-name {
+      font-weight: 700;
+      color: var(--cream);
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+    }
+    .oil-card .oil-verdict {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+    .oil-card.good .oil-verdict { color: #6DB98B; }
+    .oil-card.bad .oil-verdict { color: var(--terra); }
+    .oil-card .oil-why { font-size: 0.83rem; color: var(--muted); line-height: 1.5; }
+
+    .month-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .month-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .month-label {
+      font-family: var(--fd);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1.2;
+    }
+    .month-label span {
+      display: block;
+      font-family: var(--fb);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+    .month-content h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.4rem;
+    }
+    .month-content p { font-size: 0.875rem; color: var(--muted); margin: 0; }
+
+    /* ── CTA ── */
+    .guide-cta {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .guide-cta h2 {
+      font-family: var(--fd);
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+    .guide-cta p { color: var(--muted); margin-bottom: 2rem; font-size: 1rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .btn-fill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--terra);
+      color: var(--cream);
+      text-decoration: none;
+      padding: 1rem 2.25rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      font-family: var(--fb);
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn-fill:hover { background: var(--terra-h); transform: translateY(-2px); }
+    .btn-fill:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    /* ── Footer ── */
+    footer {
+      background: #090806;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .month-card { grid-template-columns: 1fr; }
+      .oil-grid { grid-template-columns: 1fr 1fr; }
+      .toc-inner { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-logo">Yati Locs</a>
+  <a href="/" class="nav-back">
+    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+    Back to Yati Locs
+  </a>
+</nav>
+
+<div class="kente" aria-hidden="true"></div>
+
+<header class="guide-hero">
+  <span class="guide-label">Free Resource</span>
+  <h1>The Complete<br><em>Locs Maintenance Guide</em><br>for Dubai</h1>
+  <p>Everything Yati has learned maintaining locs in one of the world's harshest climates — the heat, the salt air, the AC that never stops. This guide is what she tells every new client.</p>
+  <div class="guide-meta">
+    <span>
+      <svg viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+      15-minute read
+    </span>
+    <span>
+      <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+      Written by Yati
+    </span>
+    <span>
+      <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+      Dubai, UAE
+    </span>
+  </div>
+</header>
+
+<div class="toc-card">
+  <div class="toc-inner">
+    <p class="toc-title">In this guide</p>
+    <ol class="toc-list">
+      <li><a href="#wash">Yati's wash routine for Dubai's climate</a></li>
+      <li><a href="#oils">Which oils work vs. which cause buildup</a></li>
+      <li><a href="#sleep">How to sleep without destroying your edges</a></li>
+      <li><a href="#professional">When you need a professional — and when you don't</a></li>
+      <li><a href="#months">Month-by-month guide for starter locs</a></li>
+    </ol>
+  </div>
+</div>
+
+<main class="guide-content">
+
+  <!-- Section 1 -->
+  <section class="guide-section" id="wash">
+    <span class="section-number">Chapter 01</span>
+    <h2>Yati's Wash Routine<br><em>for Dubai's Climate</em></h2>
+
+    <p>Dubai is not London. It is not Lagos. The combination of <strong>40-degree heat, constant air conditioning, salt from the Gulf, and extreme mineral content in the tap water</strong> means the standard advice you'll find online was written for someone else's climate. This routine was built here, for here.</p>
+
+    <p>The biggest mistake Yati sees from new clients? <strong>Washing too infrequently because they're afraid of their locs coming undone.</strong> Under-washing in Dubai's heat leads to sweat buildup, scalp irritation, and odour that bakes in during summer. Your locs need to breathe.</p>
+
+    <h3 style="font-family:var(--fd); font-size:1.15rem; margin:1.75rem 0 0.75rem; color:var(--cream);">The Frequency</h3>
+    <ul class="checklist">
+      <li><strong>Starter locs (0-6 months):</strong> every 7-10 days, no sooner. Washing too frequently in early stages loosens new growth before it has time to loc.</li>
+      <li><strong>Established locs (6+ months):</strong> every 5-7 days in summer, every 7-10 days in winter.</li>
+      <li><strong>After the beach or ocean:</strong> rinse same day, full wash within 24 hours. Salt water is beautiful until it's not.</li>
+    </ul>
+
+    <h3 style="font-family:var(--fd); font-size:1.15rem; margin:1.75rem 0 0.75rem; color:var(--cream);">Step by Step</h3>
+    <p><strong>Step 1 — Pre-wash dilution.</strong> Fill a spray bottle with 1 part shampoo to 4 parts water. Dubai tap water is extremely hard (high mineral content). Using concentrated shampoo directly on your scalp in hard water creates white residue that is notoriously difficult to rinse out of locs.</p>
+
+    <p><strong>Step 2 — Section and apply.</strong> Part your locs into four sections. Apply diluted shampoo directly to the scalp, section by section. Use the pads of your fingers to massage in small circles — never scratch with nails. Locs need scalp health, not strand attention.</p>
+
+    <p><strong>Step 3 — Rinse thoroughly.</strong> This is where most people underdo it. Rinse for twice as long as you think you need to. In Dubai's hard water, residue buildup is the number one cause of dull, heavy-feeling locs. When in doubt, rinse again.</p>
+
+    <p><strong>Step 4 — Apple cider vinegar rinse (optional but recommended monthly).</strong> Mix 1 tablespoon ACV into 2 cups of water. Pour through your locs after your final rinse, then rinse out with clean water. This strips mineral buildup and restores shine. Do this once a month, not every wash.</p>
+
+    <p><strong>Step 5 — Dry completely before leaving the house.</strong> This is critical in Dubai. Locs that stay damp in extreme heat develop mildew from the inside. Sit under a hooded dryer, use a microfibre towel to squeeze (not rub) moisture out, and let them finish air-drying fully before tying them up.</p>
+
+    <div class="tip-box">
+      <strong>Yati's Tip</strong>
+      In July and August, wash in the morning and let your locs air-dry before afternoon sun. The heat actually works in your favour — 40-degree dry air will finish drying them faster than any hooded dryer.
+    </div>
+  </section>
+
+  <div class="kente" aria-hidden="true"></div>
+
+  <!-- Section 2 -->
+  <section class="guide-section" id="oils">
+    <span class="section-number">Chapter 02</span>
+    <h2>Which Oils Work<br><em>vs. Which Cause Buildup</em></h2>
+
+    <p>Oil is where locs maintenance gets confusing. Walk into any beauty supply store and you will find shelves of products that promise moisture while quietly <strong>coating your locs in wax, silicone, or heavy mineral oil that your hair cannot absorb</strong> — and that becomes a nightmare to rinse out in hard water.</p>
+
+    <p>Here is the simple test: if the oil sits on the surface of your hair and does not absorb within 30 seconds, it is not feeding your loc. It is coating it. Over months, that coating traps everything else — dust, product, skin cells. This is how locs get that dull, heavy, slightly sour feel.</p>
+
+    <p>Yati's rule: <strong>use only lightweight penetrating oils, and use them on the scalp, not the length.</strong> Healthy scalp equals healthy locs. The length takes care of itself.</p>
+
+    <div class="oil-grid">
+      <div class="oil-card good">
+        <div class="oil-name">Jojoba Oil</div>
+        <div class="oil-verdict">Best choice</div>
+        <div class="oil-why">Chemically closest to your scalp's natural sebum. Absorbs within seconds. Anti-inflammatory. Works in humidity and dry heat.</div>
+      </div>
+      <div class="oil-card good">
+        <div class="oil-name">Sweet Almond Oil</div>
+        <div class="oil-verdict">Excellent</div>
+        <div class="oil-why">Lightweight, high in vitamin E. Great for scalps prone to dryness or flaking in AC environments. Absorbs clean.</div>
+      </div>
+      <div class="oil-card good">
+        <div class="oil-name">Argan Oil</div>
+        <div class="oil-verdict">Good — use sparingly</div>
+        <div class="oil-why">Excellent for edge care and shine on established locs. Slightly heavier — 2-3 drops is enough for the scalp.</div>
+      </div>
+      <div class="oil-card good">
+        <div class="oil-name">Peppermint Oil (diluted)</div>
+        <div class="oil-verdict">Good for circulation</div>
+        <div class="oil-why">Always diluted in a carrier oil (never neat). Stimulates scalp circulation. Great in summer when scalp feels "hot" and tight.</div>
+      </div>
+      <div class="oil-card bad">
+        <div class="oil-name">Coconut Oil</div>
+        <div class="oil-verdict">Avoid in Dubai</div>
+        <div class="oil-why">Solidifies in AC, coats locs rather than penetrating in humidity. Beautiful oil — wrong climate for regular use on locs.</div>
+      </div>
+      <div class="oil-card bad">
+        <div class="oil-name">Mineral Oil / Baby Oil</div>
+        <div class="oil-verdict">Avoid entirely</div>
+        <div class="oil-why">Petroleum derivative. Zero absorption. Creates a coating that traps lint and product. Extremely difficult to remove from mature locs.</div>
+      </div>
+      <div class="oil-card bad">
+        <div class="oil-name">Castor Oil (undiluted)</div>
+        <div class="oil-verdict">Too heavy alone</div>
+        <div class="oil-why">Excellent for edges when mixed 1:4 with jojoba. Undiluted on locs causes buildup rapidly in Dubai's heat. Dilute always.</div>
+      </div>
+      <div class="oil-card bad">
+        <div class="oil-name">Most "Loc Butters"</div>
+        <div class="oil-verdict">Read the label</div>
+        <div class="oil-why">Many contain beeswax, shea butter + mineral oil combinations. Wax never washes out. If it lists petroleum or wax, skip it.</div>
+      </div>
+    </div>
+
+    <div class="warning-box">
+      <strong>Warning</strong>
+      Beeswax and loc wax products were once the standard recommendation for starter locs. They should no longer be used. Wax traps inside the loc structure and cannot be fully removed, even with clarifying shampoos. If your locs feel waxy or smell stale within days of washing, this is likely the cause. Yati can help diagnose and treat wax buildup — but prevention is far easier.
+    </div>
+  </section>
+
+  <div class="kente" aria-hidden="true"></div>
+
+  <!-- Section 3 -->
+  <section class="guide-section" id="sleep">
+    <span class="section-number">Chapter 03</span>
+    <h2>How to Sleep Without<br><em>Destroying Your Edges</em></h2>
+
+    <p>Your edges are the most vulnerable part of your locs. They are shorter, thinner, and under the most mechanical stress — every time you sleep on a rough cotton pillowcase, every time you tie your hair too tightly, every time you rub without thinking. In Dubai's dry AC air, which pulls moisture from everything while you sleep, that stress compounds nightly.</p>
+
+    <p>The good news: <strong>protecting your edges while you sleep takes three minutes and costs less than a cup of coffee.</strong></p>
+
+    <h3 style="font-family:var(--fd); font-size:1.15rem; margin:1.75rem 0 0.75rem; color:var(--cream);">The Non-Negotiables</h3>
+    <ul class="checklist">
+      <li><strong>Satin or silk pillowcase.</strong> Cotton is rough at the microscopic level — it grabs and pulls with every movement. Satin slides. This is the single biggest change most clients can make. Available at most home stores in Dubai Mall.</li>
+      <li><strong>Satin-lined bonnet or headwrap.</strong> Even better than a pillowcase alone. Wraps your locs in satin regardless of how much you move. Not a style choice — it is maintenance.</li>
+      <li><strong>Loose gather, never tight.</strong> If you put your locs up at night, use a large satin scrunchie and gather loosely at the crown. Tight styles at bedtime pull continuously on the hairline for 7-8 hours. This is how edges thin over time.</li>
+    </ul>
+
+    <h3 style="font-family:var(--fd); font-size:1.15rem; margin:1.75rem 0 0.75rem; color:var(--cream);">The Optional (but effective)</h3>
+    <ul class="checklist">
+      <li><strong>Light edge oil before bed.</strong> 2-3 drops of jojoba along the hairline, worked in gently with your fingertips. Not on the locs themselves — on the edges and the scalp at the front. This counters the overnight moisture loss from AC.</li>
+      <li><strong>Pineapple gather for long locs.</strong> Gather all your locs into a very loose high ponytail (the "pineapple"). This keeps the length from being crushed under your body weight while you sleep and preserves shape in freshly-retwisted styles.</li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>Yati's Tip</strong>
+      If you wake up and your locs look flattened or creased from sleep, a light spray of water and light finger-shaping will reset most styles. Never use heat immediately after sleep — let your locs breathe and resettle for 15 minutes first.
+    </div>
+
+    <p><strong>What about loc-specific sleep caps?</strong> They work well for shorter locs. For longer, thicker locs, a satin bonnet may not be large enough to hold everything comfortably. In that case, a satin pillowcase plus pineapple gather is more effective. The goal is reducing friction and maintaining moisture — there is no one product that works for everyone.</p>
+  </section>
+
+  <div class="kente" aria-hidden="true"></div>
+
+  <!-- Section 4 -->
+  <section class="guide-section" id="professional">
+    <span class="section-number">Chapter 04</span>
+    <h2>When to See a Professional<br><em>— and When You Don't Need To</em></h2>
+
+    <p>Part of what Yati believes in is honest education. Not every hair concern requires a salon appointment. <strong>Knowing the difference saves you money and builds the kind of hair literacy that keeps your locs thriving for decades.</strong></p>
+
+    <h3 style="font-family:var(--fd); font-size:1.15rem; margin:1.75rem 0 0.75rem; color:var(--cream);">Handle it yourself</h3>
+    <ul class="checklist">
+      <li><strong>Minor frizz between appointments.</strong> Light oil on your palms, gently smooth over the surface. Frizz in the first 1-3 years is normal — it is part of the locking process, not a problem.</li>
+      <li><strong>Single loose new growth sprout.</strong> Small amounts of loose new growth are normal and healthy. Do not try to re-twist individual stray hairs yourself — you risk interlocking or thinning that loc. Leave it for your appointment.</li>
+      <li><strong>Dry scalp between washes.</strong> Light jojoba on the scalp 2-3 times per week. Do not over-oil — you are hydrating, not coating.</li>
+      <li><strong>Light lint.</strong> Usually from pillowcases or clothing. Switch to satin pillowcase. Most surface lint can be removed by a professional at your next session.</li>
+    </ul>
+
+    <h3 style="font-family:var(--fd); font-size:1.15rem; margin:1.75rem 0 0.75rem; color:var(--cream);">Book Yati — do not delay</h3>
+    <ul class="checklist">
+      <li><strong>Locs merging or joining at the base.</strong> This is called "budding" or "congo-ing." Some people want it. Most don't. If you notice two locs fusing at the root, early intervention is easy. Waiting makes it much harder to separate without damage.</li>
+      <li><strong>Scalp irritation or tenderness that does not resolve in 48 hours.</strong> Can be product reaction, product buildup, or in rare cases the beginning of a scalp condition. Do not keep washing with the same product hoping it improves.</li>
+      <li><strong>Significant buildup — heavy, dull, or stale-smelling locs.</strong> This requires a professional clarifying treatment, not just a home wash. Yati uses specific protocols for buildup depending on whether the cause is product, mineral, or wax.</li>
+      <li><strong>Thinning at the root of one or more locs.</strong> This needs professional assessment. It can be caused by too-tight retwisting, mechanical stress, or the start of traction alopecia. Caught early it is fully reversible.</li>
+      <li><strong>Before any major style change.</strong> Starting loc extensions, going from one length to another, combining or splitting locs — all of these require professional hands.</li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>Frequency as a baseline</strong>
+      For most clients with established locs, Yati recommends a professional retwist every 4-8 weeks depending on hair type and growth speed. New growth that is left beyond 10-12 weeks starts to put strain on the existing loc structure from the weight of uncontrolled growth. Your appointment is maintenance, not luxury.
+    </div>
+  </section>
+
+  <div class="kente" aria-hidden="true"></div>
+
+  <!-- Section 5 -->
+  <section class="guide-section" id="months">
+    <span class="section-number">Chapter 05</span>
+    <h2>Month-by-Month Guide<br><em>for Starter Locs</em></h2>
+
+    <p>Starting locs is a commitment — not because they are difficult, but because the first year requires patience and trust. <strong>Your locs will go through stages that look wrong before they look right.</strong> This is the guide Yati gives every client who starts from scratch with her.</p>
+
+    <p>The process varies by hair type, texture, and method (two-strand twist, comb coil, interlocking, freeform). The timeline below is a general framework. Your experience will differ — Yati will tell you exactly where you are at each appointment.</p>
+
+    <div class="month-grid">
+      <div class="month-card">
+        <div>
+          <div class="month-label">Months 1–2<span>The Beginning</span></div>
+        </div>
+        <div class="month-content">
+          <h4>Installation and early care</h4>
+          <p>Your pattern is installed. Everything looks defined. Do not touch it. Avoid washing for the first 2-3 weeks to let the pattern set. When you do wash, be gentle. This is the most fragile stage — the pattern can unravel with rough handling. Expect significant frizz. This is normal.</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <div>
+          <div class="month-label">Months 2–4<span>The Ugly Phase</span></div>
+        </div>
+        <div class="month-content">
+          <h4>Be patient — this is real</h4>
+          <p>Your locs will look frizzy, uneven, and possibly like they are unravelling. They are not. This is the loc beginning to form from the inside. The outside appears messy while the internal structure builds. Most people who abandon their locs do so in this phase. Do not. Yati has never seen a client's locs fail to form in this phase — but she has seen many give up one month too early.</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <div>
+          <div class="month-label">Months 4–6<span>Budding</span></div>
+        </div>
+        <div class="month-content">
+          <h4>The loc starts to hold its shape</h4>
+          <p>You will start to feel the loc forming — a slight firmness when you squeeze the length. Frizz is still present but the surface is becoming more consistent. This is when the loc "buds" — the hair at the end starts to firm into a rounded tip. Regular retwisting of new growth at the root is important now. Book Yati every 4-6 weeks through this phase.</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <div>
+          <div class="month-label">Months 6–9<span>Teenage Locs</span></div>
+        </div>
+        <div class="month-content">
+          <h4>Growing pains, almost there</h4>
+          <p>The locs are firm but short. New growth is visible. The length is forming but has not yet lengthened enough to carry its own weight. Frizz reduces but does not disappear. At this point you will begin to see your final pattern clearly — the thickness, the shape, the individual character of each loc.</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <div>
+          <div class="month-label">Months 9–12<span>Maturation</span></div>
+        </div>
+        <div class="month-content">
+          <h4>Your locs are here</h4>
+          <p>By month 9-12 (depending on hair type), most locs have formed. The surface is smooth, the tips are defined, and the loc holds its shape between washes. This is when most clients say "now I understand." The journey from here is maintenance and growth, not formation. You can start exploring more styles, updos, and creative arrangements with confidence.</p>
+        </div>
+      </div>
+      <div class="month-card">
+        <div>
+          <div class="month-label">Year 2+<span>Established</span></div>
+        </div>
+        <div class="month-content">
+          <h4>This is what you were building</h4>
+          <p>Established locs are genuinely low-maintenance. A wash every 5-7 days, a retwist every 4-8 weeks, and the right oils are all you need. Many clients report that locs are the least maintenance their hair has ever required — the investment is in the first year. Everything after that is the reward.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <strong>The One Thing to Know</strong>
+      The biggest predictor of loc success is not hair type or method — it is consistency. Consistent washing, consistent retwisting appointments, and consistent scalp care. Yati has worked with every texture and every starting condition. The clients with the most beautiful established locs are not those who started with the "best" hair. They are the ones who showed up consistently.
+    </div>
+  </section>
+
+</main>
+
+<section class="guide-cta">
+  <h2>Ready to start or level up<br>your locs journey?</h2>
+  <p>Yati offers consultations for new clients, starter loc installations, and maintenance for all stages. Based in Dubai, serving the whole community.</p>
+  <a href="https://wa.me/971558487022?text=Hi%20Yati%2C%20I%27d%20like%20to%20book%20an%20appointment" class="btn-fill" target="_blank" rel="noopener">
+    <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Book an Appointment with Yati
+  </a>
+</section>
+
+<footer>
+  <p style="margin-bottom:0.5rem">
+    <a href="/">Yati Locs Dubai</a> &nbsp;&bull;&nbsp;
+    <a href="https://wa.me/971558487022" target="_blank" rel="noopener">WhatsApp</a> &nbsp;&bull;&nbsp;
+    <a href="https://www.instagram.com/yatilocs/" target="_blank" rel="noopener">Instagram</a>
+  </p>
+  <p>&copy; 2026 Yati Locs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
